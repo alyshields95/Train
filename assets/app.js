@@ -62,7 +62,9 @@ function rowGenerator(name, destination, start, rate, nextTrain) {
     var dataArray = [name, destination, start, rate, nextTrain]
     var thData = $("<th>")
     thData.attr("scope", "row")
-    thData.text("X") //for removal button (coming soon)
+    thData.text("X")
+
+
     dataArray.forEach(function (element) {
         var newData = $("<td>")
         newData.text(element)
